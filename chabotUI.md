@@ -1,9 +1,11 @@
 ### [Chabot UI](https://github.com/mckaywrigley/chatbot-ui) Setup
 
+Activate llama-cpp conda environment
+
 Run llama-cpp in webserver mode (a compatible OpenAI API)
 
 ```
-llama-cpp python3 -m llama_cpp.server --model CEPH/LLM-models/TheBloke_Llama-2-7B-Chat-GGUF/llama-2-13b-chat.Q5_K_M.gguf  --n_gpu_layers 40 --host 10.64.10.36
+python3 -m llama_cpp.server --model CEPH/LLM-models/TheBloke_Llama-2-7B-Chat-GGUF/llama-2-13b-chat.Q5_K_M.gguf  --n_gpu_layers 40 --host 10.64.10.36
 ```
 
 then run the docker for Chabot UI
